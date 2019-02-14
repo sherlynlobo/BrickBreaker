@@ -22,5 +22,19 @@ class GameScene: SKScene {
         border.friction = 0
         self.physicsBody = border
     }
+    
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        for touch in touches {
+            let touchLocation = touch.location(in: self)
+            paddle.position.x = touchLocation.x
+        }
+    }
+    
+    override func touchesMoved(_ touches: Set<UITouch>, with event: UIEvent?) {
+        for touch in touches {
+            let touchLocation = touch.location(in: self)
+            paddle.position.x = touchLocation.x
+        }
+    }
 
     }
