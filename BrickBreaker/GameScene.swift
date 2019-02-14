@@ -9,7 +9,7 @@
 import SpriteKit
 import GameplayKit
 
-class GameScene: SKScene {
+class GameScene: SKScene, SKPhysicsContactDelegate {
     var ball:SKSpriteNode!
     var paddle:SKSpriteNode!
     
@@ -21,6 +21,8 @@ class GameScene: SKScene {
         let border = SKPhysicsBody(edgeLoopFrom: (view.scene?.frame)!)
         border.friction = 0
         self.physicsBody = border
+        
+        self.physicsWorld.contactDelegate = self
     }
     
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
@@ -36,5 +38,20 @@ class GameScene: SKScene {
             paddle.position.x = touchLocation.x
         }
     }
+    
+    func didBegin(_ contact: SKPhysicsContact) {
+        let bodyAName = contact.bodyA.node?.name
+        let bodyBName = contact.bodyB.node?.name
+        
+        if bodyAName == "Ball" && bodyBName == "bricks" || bodyAName == "bricks" && bodyBName == "Ball"{
+            if bodyAName == "bricks" {
+                contact.bodyA.node?.removeFromParent()
+            } else if bodyBName == "bricks" {
+                contact.bodyB.node?.removeFromParent()
+            }
+        }
 
     }
+    
+    
+}
