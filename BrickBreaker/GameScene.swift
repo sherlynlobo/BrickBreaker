@@ -12,10 +12,20 @@ import GameplayKit
 class GameScene: SKScene, SKPhysicsContactDelegate {
     var ball:SKSpriteNode!
     var paddle:SKSpriteNode!
+    var scoreLabel:SKLabelNode!
+    var score:Int = 0{
+        didSet
+        {
+            scoreLabel.text = "Score:\(score)"
+        }
+    }
     
     override func didMove(to view: SKView) {
+        
         ball = (self.childNode(withName: "Ball") as! SKSpriteNode)
         paddle = (self.childNode(withName: "Paddle") as! SKSpriteNode)
+        
+        scoreLabel = self.childNode(withName: "Score") as!  SKLabelNode
         
         ball.physicsBody?.applyImpulse(CGVector(dx: 50, dy: 50) )
         let border = SKPhysicsBody(edgeLoopFrom: (view.scene?.frame)!)
@@ -46,11 +56,21 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
         if bodyAName == "Ball" && bodyBName == "bricks" || bodyAName == "bricks" && bodyBName == "Ball"{
             if bodyAName == "bricks" {
                 contact.bodyA.node?.removeFromParent()
+                score += 1
             } else if bodyBName == "bricks" {
                 contact.bodyB.node?.removeFromParent()
+                score += 1
             }
         }
 
+    }
+    override func update(_ currentTime: TimeInterval) {
+        //Winning Logic
+        if (score == 12)
+        {
+        scoreLabel.text = "YOU WON!"
+        self.view?.isPaused = true
+        }
     }
     
     
