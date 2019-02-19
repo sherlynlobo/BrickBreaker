@@ -8,6 +8,7 @@
 
 import SpriteKit
 import GameplayKit
+import AVFoundation
 
 class GameScene: SKScene, SKPhysicsContactDelegate {
     var ball:SKSpriteNode!
@@ -20,12 +21,29 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
         }
     }
     
+    var audioPlayer:AVAudioPlayer!
+
+    
     override func didMove(to view: SKView) {
         
         ball = (self.childNode(withName: "Ball") as! SKSpriteNode)
         paddle = (self.childNode(withName: "Paddle") as! SKSpriteNode)
         
         scoreLabel = self.childNode(withName: "Score") as!  SKLabelNode
+        
+        let urlPath = Bundle.main.url(forResource: "brick", withExtension: "wav")
+        
+        do{
+            audioPlayer = try AVAudioPlayer(contentsOf: urlPath!)
+            audioPlayer.prepareToPlay()
+            if (audioPlayer != nil) {
+                print("Contains a value!")
+            } else {
+                print("Doesn’t contain a value.")
+            }
+        } catch{
+            print("Error")
+        }
         
         ball.physicsBody?.applyImpulse(CGVector(dx: 50, dy: 50) )
         let border = SKPhysicsBody(edgeLoopFrom: (view.scene?.frame)!)
@@ -55,9 +73,11 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
         
         if bodyAName == "Ball" && bodyBName == "bricks" || bodyAName == "bricks" && bodyBName == "Ball"{
             if bodyAName == "bricks" {
+                audioPlayer.play()
                 contact.bodyA.node?.removeFromParent()
                 score += 1
             } else if bodyBName == "bricks" {
+                audioPlayer.play()
                 contact.bodyB.node?.removeFromParent()
                 score += 1
             }
@@ -71,7 +91,18 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
         scoreLabel.text = "YOU WON!"
         self.view?.isPaused = true
         }
+        //Losing Logic
+        if (ball.position.y < paddle.position.y)
+        {
+            scoreLabel.text = "You Lost! You are a loser!"
+            self.view?.isPaused = true
+        }
     }
     
     
+    
+    
 }
+    
+    
+

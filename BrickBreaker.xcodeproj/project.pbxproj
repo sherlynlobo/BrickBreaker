@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E7C3CAF9221CBBF400C5A6C7 /* brick.wav in Resources */ = {isa = PBXBuildFile; fileRef = E7C3CAF8221CBBF400C5A6C7 /* brick.wav */; };
 		E7F3DDCE221608EE00346DD8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7F3DDCD221608EE00346DD8 /* AppDelegate.swift */; };
 		E7F3DDD0221608EE00346DD8 /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = E7F3DDCF221608EE00346DD8 /* GameScene.sks */; };
 		E7F3DDD2221608EE00346DD8 /* Actions.sks in Resources */ = {isa = PBXBuildFile; fileRef = E7F3DDD1221608EE00346DD8 /* Actions.sks */; };
@@ -18,6 +19,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		E7C3CAF8221CBBF400C5A6C7 /* brick.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = brick.wav; path = "../../../../../Downloads/BreakoutClone-part2Finished/brick.wav"; sourceTree = "<group>"; };
 		E7F3DDCA221608EE00346DD8 /* BrickBreaker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BrickBreaker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E7F3DDCD221608EE00346DD8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E7F3DDCF221608EE00346DD8 /* GameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameScene.sks; sourceTree = "<group>"; };
@@ -66,6 +68,7 @@
 				E7F3DDD3221608EE00346DD8 /* GameScene.swift */,
 				E7F3DDD5221608EE00346DD8 /* GameViewController.swift */,
 				E7F3DDD7221608EE00346DD8 /* Main.storyboard */,
+				E7C3CAF8221CBBF400C5A6C7 /* brick.wav */,
 				E7F3DDDA221608F000346DD8 /* Assets.xcassets */,
 				E7F3DDDC221608F000346DD8 /* LaunchScreen.storyboard */,
 				E7F3DDDF221608F000346DD8 /* Info.plist */,
@@ -133,6 +136,7 @@
 			files = (
 				E7F3DDD9221608EE00346DD8 /* Main.storyboard in Resources */,
 				E7F3DDD0221608EE00346DD8 /* GameScene.sks in Resources */,
+				E7C3CAF9221CBBF400C5A6C7 /* brick.wav in Resources */,
 				E7F3DDDB221608F000346DD8 /* Assets.xcassets in Resources */,
 				E7F3DDDE221608F000346DD8 /* LaunchScreen.storyboard in Resources */,
 				E7F3DDD2221608EE00346DD8 /* Actions.sks in Resources */,
