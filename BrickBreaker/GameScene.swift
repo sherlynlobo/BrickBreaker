@@ -19,23 +19,27 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
         {
             scoreLabel.text = "Score:\(score)"
         }
-    }
+                    }
     
     var audioPlayer:AVAudioPlayer!
 
     
     override func didMove(to view: SKView) {
         
+        //For Background Music
+        let backgroundSound = SKAudioNode(fileNamed: "background_music.mp3")
+        self.addChild(backgroundSound)
+        
         ball = (self.childNode(withName: "Ball") as! SKSpriteNode)
         paddle = (self.childNode(withName: "Paddle") as! SKSpriteNode)
-        
-        scoreLabel = self.childNode(withName: "Score") as!  SKLabelNode
+        scoreLabel = self.childNode(withName: "Score") as?  SKLabelNode
         
         let urlPath = Bundle.main.url(forResource: "brick", withExtension: "wav")
         
         do{
             audioPlayer = try AVAudioPlayer(contentsOf: urlPath!)
             audioPlayer.prepareToPlay()
+            //to check if audio file works
             if (audioPlayer != nil) {
                 print("Contains a value!")
             } else {
@@ -49,7 +53,6 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
         let border = SKPhysicsBody(edgeLoopFrom: (view.scene?.frame)!)
         border.friction = 0
         self.physicsBody = border
-        
         self.physicsWorld.contactDelegate = self
     }
     
@@ -94,13 +97,10 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
         //Losing Logic
         if (ball.position.y < paddle.position.y)
         {
-            scoreLabel.text = "You Lost! You are a loser!"
+            scoreLabel.text = "You Lost!"
             self.view?.isPaused = true
         }
     }
-    
-    
-    
     
 }
     
