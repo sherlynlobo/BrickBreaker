@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E751B3282221C26A008034D5 /* GameOver.sks in Resources */ = {isa = PBXBuildFile; fileRef = E751B3272221C26A008034D5 /* GameOver.sks */; };
 		E7C3CAF9221CBBF400C5A6C7 /* brick.wav in Resources */ = {isa = PBXBuildFile; fileRef = E7C3CAF8221CBBF400C5A6C7 /* brick.wav */; };
 		E7C3CAFD221DECA100C5A6C7 /* background_music.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = E7C3CAFC221DECA100C5A6C7 /* background_music.mp3 */; };
 		E7C3CB01221DEDB700C5A6C7 /* Arcade-Puzzler.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = E7C3CB00221DEDB700C5A6C7 /* Arcade-Puzzler.mp3 */; };
@@ -21,6 +22,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		E751B3272221C26A008034D5 /* GameOver.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameOver.sks; sourceTree = "<group>"; };
 		E7C3CAF8221CBBF400C5A6C7 /* brick.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = brick.wav; path = "../../../../../Downloads/BreakoutClone-part2Finished/brick.wav"; sourceTree = "<group>"; };
 		E7C3CAFC221DECA100C5A6C7 /* background_music.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = background_music.mp3; path = ../../../../../Downloads/background_music.mp3; sourceTree = "<group>"; };
 		E7C3CB00221DEDB700C5A6C7 /* Arcade-Puzzler.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = "Arcade-Puzzler.mp3"; path = "../../../../../Downloads/Arcade-Puzzler.mp3"; sourceTree = "<group>"; };
@@ -70,6 +72,7 @@
 				E7F3DDCF221608EE00346DD8 /* GameScene.sks */,
 				E7F3DDD1221608EE00346DD8 /* Actions.sks */,
 				E7F3DDD3221608EE00346DD8 /* GameScene.swift */,
+				E751B3272221C26A008034D5 /* GameOver.sks */,
 				E7F3DDD5221608EE00346DD8 /* GameViewController.swift */,
 				E7F3DDD7221608EE00346DD8 /* Main.storyboard */,
 				E7C3CAF8221CBBF400C5A6C7 /* brick.wav */,
@@ -144,6 +147,7 @@
 				E7C3CB01221DEDB700C5A6C7 /* Arcade-Puzzler.mp3 in Resources */,
 				E7F3DDD9221608EE00346DD8 /* Main.storyboard in Resources */,
 				E7F3DDD0221608EE00346DD8 /* GameScene.sks in Resources */,
+				E751B3282221C26A008034D5 /* GameOver.sks in Resources */,
 				E7C3CAF9221CBBF400C5A6C7 /* brick.wav in Resources */,
 				E7F3DDDB221608F000346DD8 /* Assets.xcassets in Resources */,
 				E7F3DDDE221608F000346DD8 /* LaunchScreen.storyboard in Resources */,
