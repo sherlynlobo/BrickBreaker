@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		E751B3282221C26A008034D5 /* GameOver.sks in Resources */ = {isa = PBXBuildFile; fileRef = E751B3272221C26A008034D5 /* GameOver.sks */; };
 		E751B32A22220022008034D5 /* Menu.sks in Resources */ = {isa = PBXBuildFile; fileRef = E751B32922220022008034D5 /* Menu.sks */; };
+		E751B32C222203D9008034D5 /* Menu.swift in Sources */ = {isa = PBXBuildFile; fileRef = E751B32B222203D9008034D5 /* Menu.swift */; };
+		E751B32E222216D4008034D5 /* GameOver.swift in Sources */ = {isa = PBXBuildFile; fileRef = E751B32D222216D4008034D5 /* GameOver.swift */; };
 		E7C3CAF9221CBBF400C5A6C7 /* brick.wav in Resources */ = {isa = PBXBuildFile; fileRef = E7C3CAF8221CBBF400C5A6C7 /* brick.wav */; };
 		E7C3CAFD221DECA100C5A6C7 /* background_music.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = E7C3CAFC221DECA100C5A6C7 /* background_music.mp3 */; };
 		E7C3CB01221DEDB700C5A6C7 /* Arcade-Puzzler.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = E7C3CB00221DEDB700C5A6C7 /* Arcade-Puzzler.mp3 */; };
@@ -25,6 +27,8 @@
 /* Begin PBXFileReference section */
 		E751B3272221C26A008034D5 /* GameOver.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameOver.sks; sourceTree = "<group>"; };
 		E751B32922220022008034D5 /* Menu.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Menu.sks; sourceTree = "<group>"; };
+		E751B32B222203D9008034D5 /* Menu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Menu.swift; sourceTree = "<group>"; };
+		E751B32D222216D4008034D5 /* GameOver.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameOver.swift; sourceTree = "<group>"; };
 		E7C3CAF8221CBBF400C5A6C7 /* brick.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = brick.wav; path = "../../../../../Downloads/BreakoutClone-part2Finished/brick.wav"; sourceTree = "<group>"; };
 		E7C3CAFC221DECA100C5A6C7 /* background_music.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = background_music.mp3; path = ../../../../../Downloads/background_music.mp3; sourceTree = "<group>"; };
 		E7C3CB00221DEDB700C5A6C7 /* Arcade-Puzzler.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = "Arcade-Puzzler.mp3"; path = "../../../../../Downloads/Arcade-Puzzler.mp3"; sourceTree = "<group>"; };
@@ -75,7 +79,9 @@
 				E7F3DDD1221608EE00346DD8 /* Actions.sks */,
 				E7F3DDD3221608EE00346DD8 /* GameScene.swift */,
 				E751B3272221C26A008034D5 /* GameOver.sks */,
+				E751B32D222216D4008034D5 /* GameOver.swift */,
 				E751B32922220022008034D5 /* Menu.sks */,
+				E751B32B222203D9008034D5 /* Menu.swift */,
 				E7F3DDD5221608EE00346DD8 /* GameViewController.swift */,
 				E7F3DDD7221608EE00346DD8 /* Main.storyboard */,
 				E7C3CAF8221CBBF400C5A6C7 /* brick.wav */,
@@ -168,6 +174,8 @@
 			files = (
 				E7F3DDD4221608EE00346DD8 /* GameScene.swift in Sources */,
 				E7F3DDD6221608EE00346DD8 /* GameViewController.swift in Sources */,
+				E751B32C222203D9008034D5 /* Menu.swift in Sources */,
+				E751B32E222216D4008034D5 /* GameOver.swift in Sources */,
 				E7F3DDCE221608EE00346DD8 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
