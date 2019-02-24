@@ -4,7 +4,9 @@
 //
 //  Created by Sherlyn Lobo on 2019-02-14.
 //  Copyright © 2019 Sherlyn Lobo. All rights reserved.
-//
+// Sherlyn Lobo 301013071
+// Sreeram Ramakrishnan 301042442
+// Brick breaker Game
 
 import SpriteKit
 import GameplayKit
