@@ -13,7 +13,7 @@ import AVFoundation
 
 
 
-class LTwo: SKScene, SKPhysicsContactDelegate {
+class LThree: SKScene, SKPhysicsContactDelegate {
     var ball:SKSpriteNode!
     var paddle:SKSpriteNode!
     
@@ -47,7 +47,7 @@ class LTwo: SKScene, SKPhysicsContactDelegate {
             print("Error")
         }
         
-        ball.physicsBody?.applyImpulse(CGVector(dx: 200, dy: 200) )
+        ball.physicsBody?.applyImpulse(CGVector(dx: 300, dy: 300) )
         let border = SKPhysicsBody(edgeLoopFrom: (view.scene?.frame)!)
         border.friction = 0
         self.physicsBody = border
@@ -88,12 +88,10 @@ class LTwo: SKScene, SKPhysicsContactDelegate {
     }
     override func update(_ currentTime: TimeInterval) {
         //Winning Logic
-        if (score == 24)
+        if (score == 36)
         {
-            if let go = Menu(fileNamed: "LThree")  {
-                go.scaleMode = .aspectFill
-                view!.presentScene(go)
-            }
+            scoreLabel.text = "YOU WON!"
+            self.view?.isPaused = true
         }
         //Losing Logic
         if (ball.position.y < paddle.position.y)
