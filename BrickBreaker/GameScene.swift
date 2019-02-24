@@ -29,7 +29,7 @@ class Menu: SKScene {
         Menu.NG.position.y = 0
         
         Menu.NG.fontColor = UIColor.yellow
-        Menu.NG.fontSize = 40.0
+        Menu.NG.fontSize = 72.0
         Menu.NG.zPosition = 3
         Menu.NG.fontName = "Arial Bold"
         Menu.NG.name = "NG"
@@ -40,7 +40,7 @@ class Menu: SKScene {
         Menu.IT.position.y = -200
         
         Menu.IT.fontColor = UIColor.yellow
-        Menu.IT.fontSize = 40.0
+        Menu.IT.fontSize = 72.0
         Menu.IT.zPosition = 3
         Menu.IT.fontName = "Arial Bold"
         Menu.IT.name = "IT"

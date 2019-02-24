@@ -1,8 +1,8 @@
 //
-//  GameScene.swift
+//  LTwo.swift
 //  BrickBreaker
 //
-//  Created by Sherlyn Lobo on 2019-02-14.
+//  Created by Sherlyn Lobo on 2019-02-23.
 //  Copyright © 2019 Sherlyn Lobo. All rights reserved.
 //
 
@@ -10,43 +10,19 @@ import SpriteKit
 import GameplayKit
 import AVFoundation
 
-// Place this up where you define globals
-var speedMultiplier = 1.1
-// Create a new x velocity
 
 
-var scoreLabel:SKLabelNode!
-var score:Int = 0{
-    didSet
-    {
-        scoreLabel.text = "Score:\(score)"
-    }
-}
 
-class GameScene: SKScene, SKPhysicsContactDelegate {
+class LTwo: SKScene, SKPhysicsContactDelegate {
     var ball:SKSpriteNode!
     var paddle:SKSpriteNode!
-
+    
     
     var audioPlayer:AVAudioPlayer!
-
+    
     
     override func didMove(to view: SKView) {
         
-        if let menu = Menu(fileNamed: "Menu")  {
-            menu.scaleMode = .aspectFill
-            view.presentScene(menu)
-        }
-        /*
-        if let skView = self.view as? SKView {
-            
-            if skView.scene == nil {
-                
-                let scene = Menu(size: skView.bounds.size)
-                scene.scaleMode = .aspectFill
-                skView.presentScene(scene)
-            }
-        }*/
         
         //For Background Music
         let backgroundSound = SKAudioNode(fileNamed: "background_music.mp3")
@@ -71,16 +47,11 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
             print("Error")
         }
         
-        ball.physicsBody?.applyImpulse(CGVector(dx: 100, dy: 100) )
+        ball.physicsBody?.applyImpulse(CGVector(dx: 150, dy: 150) )
         let border = SKPhysicsBody(edgeLoopFrom: (view.scene?.frame)!)
         border.friction = 0
         self.physicsBody = border
         self.physicsWorld.contactDelegate = self
-        
-        //var dx = 50 * speedMultiplier
-        // Create a new y velocity
-        //var dy = 50 * speedMultiplier
-        // Set the velocity to the ball
         
     }
     
@@ -113,19 +84,14 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
                 score += 1
             }
         }
-
+        
     }
     override func update(_ currentTime: TimeInterval) {
         //Winning Logic
         if (score == 12)
         {
-        //scoreLabel.text = "YOU WON!"
-            
-            if let go = Menu(fileNamed: "LTwo")  {
-                go.scaleMode = .aspectFill
-                view!.presentScene(go)
-            }
-        //self.view?.isPaused = true
+            //scoreLabel.text = "YOU WON!"
+            //self.view?.isPaused = true
         }
         //Losing Logic
         if (ball.position.y < paddle.position.y)
@@ -137,11 +103,8 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
             //scoreLabel.text = "You Lost!"
             
             //self.view?.isPaused = true
-         
+            
         }
     }
     
 }
-    
-    
-

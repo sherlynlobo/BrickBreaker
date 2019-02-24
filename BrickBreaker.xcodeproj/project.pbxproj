@@ -13,6 +13,8 @@
 		E751B32E222216D4008034D5 /* GameOver.swift in Sources */ = {isa = PBXBuildFile; fileRef = E751B32D222216D4008034D5 /* GameOver.swift */; };
 		E751B330222226BF008034D5 /* Instructions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E751B32F222226BF008034D5 /* Instructions.swift */; };
 		E751B332222227E9008034D5 /* Instructions.sks in Resources */ = {isa = PBXBuildFile; fileRef = E751B331222227E9008034D5 /* Instructions.sks */; };
+		E751B3342222391D008034D5 /* LTwo.swift in Sources */ = {isa = PBXBuildFile; fileRef = E751B3332222391D008034D5 /* LTwo.swift */; };
+		E751B336222239CE008034D5 /* LTwo.sks in Resources */ = {isa = PBXBuildFile; fileRef = E751B335222239CE008034D5 /* LTwo.sks */; };
 		E7C3CAF9221CBBF400C5A6C7 /* brick.wav in Resources */ = {isa = PBXBuildFile; fileRef = E7C3CAF8221CBBF400C5A6C7 /* brick.wav */; };
 		E7C3CAFD221DECA100C5A6C7 /* background_music.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = E7C3CAFC221DECA100C5A6C7 /* background_music.mp3 */; };
 		E7C3CB01221DEDB700C5A6C7 /* Arcade-Puzzler.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = E7C3CB00221DEDB700C5A6C7 /* Arcade-Puzzler.mp3 */; };
@@ -33,6 +35,8 @@
 		E751B32D222216D4008034D5 /* GameOver.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameOver.swift; sourceTree = "<group>"; };
 		E751B32F222226BF008034D5 /* Instructions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Instructions.swift; sourceTree = "<group>"; };
 		E751B331222227E9008034D5 /* Instructions.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Instructions.sks; sourceTree = "<group>"; };
+		E751B3332222391D008034D5 /* LTwo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LTwo.swift; sourceTree = "<group>"; };
+		E751B335222239CE008034D5 /* LTwo.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = LTwo.sks; sourceTree = "<group>"; };
 		E7C3CAF8221CBBF400C5A6C7 /* brick.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = brick.wav; path = "../../../../../Downloads/BreakoutClone-part2Finished/brick.wav"; sourceTree = "<group>"; };
 		E7C3CAFC221DECA100C5A6C7 /* background_music.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = background_music.mp3; path = ../../../../../Downloads/background_music.mp3; sourceTree = "<group>"; };
 		E7C3CB00221DEDB700C5A6C7 /* Arcade-Puzzler.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = "Arcade-Puzzler.mp3"; path = "../../../../../Downloads/Arcade-Puzzler.mp3"; sourceTree = "<group>"; };
@@ -96,6 +100,8 @@
 				E7F3DDDA221608F000346DD8 /* Assets.xcassets */,
 				E7F3DDDC221608F000346DD8 /* LaunchScreen.storyboard */,
 				E7F3DDDF221608F000346DD8 /* Info.plist */,
+				E751B3332222391D008034D5 /* LTwo.swift */,
+				E751B335222239CE008034D5 /* LTwo.sks */,
 			);
 			path = BrickBreaker;
 			sourceTree = "<group>";
@@ -167,6 +173,7 @@
 				E7F3DDDB221608F000346DD8 /* Assets.xcassets in Resources */,
 				E7F3DDDE221608F000346DD8 /* LaunchScreen.storyboard in Resources */,
 				E751B32A22220022008034D5 /* GameScene.sks in Resources */,
+				E751B336222239CE008034D5 /* LTwo.sks in Resources */,
 				E751B332222227E9008034D5 /* Instructions.sks in Resources */,
 				E7F3DDD2221608EE00346DD8 /* Actions.sks in Resources */,
 			);
@@ -180,6 +187,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E7F3DDD4221608EE00346DD8 /* Game.swift in Sources */,
+				E751B3342222391D008034D5 /* LTwo.swift in Sources */,
 				E7F3DDD6221608EE00346DD8 /* GameViewController.swift in Sources */,
 				E751B32C222203D9008034D5 /* GameScene.swift in Sources */,
 				E751B32E222216D4008034D5 /* GameOver.swift in Sources */,
