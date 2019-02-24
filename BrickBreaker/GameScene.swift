@@ -27,12 +27,12 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
 
     
     override func didMove(to view: SKView) {
-        /*
+        
         if let menu = Menu(fileNamed: "Menu")  {
             menu.scaleMode = .aspectFill
             view.presentScene(menu)
-        }*/
-        
+        }
+        /*
         if let skView = self.view as? SKView {
             
             if skView.scene == nil {
@@ -41,7 +41,7 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
                 scene.scaleMode = .aspectFill
                 skView.presentScene(scene)
             }
-        }
+        }*/
         
         //For Background Music
         let backgroundSound = SKAudioNode(fileNamed: "background_music.mp3")

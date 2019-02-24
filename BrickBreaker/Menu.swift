@@ -14,12 +14,27 @@ class Menu: SKScene {
     
     
     
-    var newGameButtonNode :SKSpriteNode!
-    var instructionsNode:SKSpriteNode!
+   // var newGameButtonNode :SKSpriteNode!
+    
+    public static var NG:SKLabelNode = SKLabelNode(text: "New Game")
+
+    //var instructionsNode:SKSpriteNode!
     
     override func didMove(to view: SKView) {
-        newGameButtonNode = self.childNode(withName: "newGameButton") as? SKSpriteNode
-        newGameButtonNode.name = "ng"
+        //newGameButtonNode = self.childNode(withName: "newGameButton") as? SKSpriteNode
+//        newGameButtonNode.name = "ng"
+        
+        Menu.NG.position.x = 0
+        Menu.NG.position.y = 0
+        
+        Menu.NG.fontColor = UIColor.yellow
+        Menu.NG.fontSize = 40.0
+        Menu.NG.zPosition = 3
+        Menu.NG.fontName = "Arial Bold"
+        Menu.NG.name = "NG"
+        
+        addChild(Menu.NG)
+    
         
     }
     
@@ -32,12 +47,18 @@ class Menu: SKScene {
             let pointOfTouch = touch.location(in: self)
             let tappedNode = atPoint(pointOfTouch)
             
-            if tappedNode.name == "ng" {
+            if tappedNode.name == "NG" {
+                /*
+                 let newScene = GameScene(size: self.size)
+                 newScene.scaleMode = self.scaleMode
+                 let transitionEffect = SKTransition.fade(withDuration: 0.5)
+                 self.view!.presentScene(newScene, transition: transitionEffect)*/
                 
-                let newScene = GameScene(size: self.size)
-                newScene.scaleMode = self.scaleMode
-               let transitionEffect = SKTransition.fade(withDuration: 0.5)
-                self.view!.presentScene(newScene, transition: transitionEffect)
+                if let go = GameScene(fileNamed: "GameScene")  {
+                    go.scaleMode = .aspectFill
+                    view!.presentScene(go)
+                }
+
                 
             }
             
