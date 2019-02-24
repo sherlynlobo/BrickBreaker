@@ -17,7 +17,7 @@ class Instructions: SKScene {
     
     // var newGameButtonNode :SKSpriteNode!
     
-    public static var IT:SKLabelNode = SKLabelNode(text: "Instructions")
+    public static var back:SKLabelNode = SKLabelNode(text: "Back")
     
     //var instructionsNode:SKSpriteNode!
     
@@ -25,15 +25,15 @@ class Instructions: SKScene {
         //newGameButtonNode = self.childNode(withName: "newGameButton") as? SKSpriteNode
         //        newGameButtonNode.name = "ng"
         
-        Instructions.IT.position.x = 200
-        Instructions.IT.position.y = 0
+        Instructions.back.position.x = 0
+        Instructions.back.position.y = -250
         
-        Instructions.IT.fontColor = UIColor.yellow
-        Instructions.IT.fontSize = 40.0
-        Instructions.IT.zPosition = 3
-        Instructions.IT.fontName = "Arial Bold"
-        
-        addChild(Instructions.IT)
+        Instructions.back.fontColor = UIColor.yellow
+        Instructions.back.fontSize = 40.0
+        Instructions.back.zPosition = 3
+        Instructions.back.fontName = "Arial Bold"
+        Instructions.back.name = "Back"
+        addChild(Instructions.back)
         
         
     }
@@ -54,7 +54,7 @@ class Instructions: SKScene {
                  let transitionEffect = SKTransition.fade(withDuration: 0.5)
                  self.view!.presentScene(newScene, transition: transitionEffect)*/
                 
-                if let go = GameScene(fileNamed: "GameScene")  {
+                if let go = Instructions(fileNamed: "GameScene")  {
                     go.scaleMode = .aspectFill
                     view!.presentScene(go)
                 }

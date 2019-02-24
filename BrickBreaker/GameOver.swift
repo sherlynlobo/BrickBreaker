@@ -26,6 +26,7 @@ class GameOver: SKScene {
         GameOver.scoreLabel.text = ""
         
         GameOver.scoreLabel.text = String(score)
+        score = 0
         
         
         GameOver.GO.position.x = 0

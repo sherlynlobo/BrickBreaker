@@ -17,6 +17,7 @@ class Menu: SKScene {
    // var newGameButtonNode :SKSpriteNode!
     
     public static var NG:SKLabelNode = SKLabelNode(text: "New Game")
+    public static var IT:SKLabelNode = SKLabelNode(text: "Instructions")
 
     //var instructionsNode:SKSpriteNode!
     
@@ -34,6 +35,17 @@ class Menu: SKScene {
         Menu.NG.name = "NG"
         
         addChild(Menu.NG)
+        
+        Menu.IT.position.x = 0
+        Menu.IT.position.y = -200
+        
+        Menu.IT.fontColor = UIColor.yellow
+        Menu.IT.fontSize = 40.0
+        Menu.IT.zPosition = 3
+        Menu.IT.fontName = "Arial Bold"
+        Menu.IT.name = "IT"
+        
+        addChild(Menu.IT)
     
         
     }
@@ -48,18 +60,18 @@ class Menu: SKScene {
             let tappedNode = atPoint(pointOfTouch)
             
             if tappedNode.name == "NG" {
-                /*
-                 let newScene = GameScene(size: self.size)
-                 newScene.scaleMode = self.scaleMode
-                 let transitionEffect = SKTransition.fade(withDuration: 0.5)
-                 self.view!.presentScene(newScene, transition: transitionEffect)*/
                 
                 if let go = GameScene(fileNamed: "Game")  {
                     go.scaleMode = .aspectFill
                     view!.presentScene(go)
                 }
-
+            }
+            else if tappedNode.name == "IT" {
                 
+                if let go = Menu(fileNamed: "Instructions")  {
+                    go.scaleMode = .aspectFill
+                    view!.presentScene(go)
+                }
             }
             
         }
