@@ -10,16 +10,18 @@ import SpriteKit
 import GameplayKit
 import AVFoundation
 
+var scoreLabel:SKLabelNode!
+var score:Int = 0{
+    didSet
+    {
+        scoreLabel.text = "Score:\(score)"
+    }
+}
+
 class GameScene: SKScene, SKPhysicsContactDelegate {
     var ball:SKSpriteNode!
     var paddle:SKSpriteNode!
-    var scoreLabel:SKLabelNode!
-    var score:Int = 0{
-        didSet
-        {
-            scoreLabel.text = "Score:\(score)"
-        }
-                    }
+
     
     var audioPlayer:AVAudioPlayer!
 
