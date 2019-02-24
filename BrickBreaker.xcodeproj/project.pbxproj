@@ -8,16 +8,17 @@
 
 /* Begin PBXBuildFile section */
 		E751B3282221C26A008034D5 /* GameOver.sks in Resources */ = {isa = PBXBuildFile; fileRef = E751B3272221C26A008034D5 /* GameOver.sks */; };
-		E751B32A22220022008034D5 /* Menu.sks in Resources */ = {isa = PBXBuildFile; fileRef = E751B32922220022008034D5 /* Menu.sks */; };
-		E751B32C222203D9008034D5 /* Menu.swift in Sources */ = {isa = PBXBuildFile; fileRef = E751B32B222203D9008034D5 /* Menu.swift */; };
+		E751B32A22220022008034D5 /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = E751B32922220022008034D5 /* GameScene.sks */; };
+		E751B32C222203D9008034D5 /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = E751B32B222203D9008034D5 /* GameScene.swift */; };
 		E751B32E222216D4008034D5 /* GameOver.swift in Sources */ = {isa = PBXBuildFile; fileRef = E751B32D222216D4008034D5 /* GameOver.swift */; };
+		E751B330222226BF008034D5 /* Instructions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E751B32F222226BF008034D5 /* Instructions.swift */; };
 		E7C3CAF9221CBBF400C5A6C7 /* brick.wav in Resources */ = {isa = PBXBuildFile; fileRef = E7C3CAF8221CBBF400C5A6C7 /* brick.wav */; };
 		E7C3CAFD221DECA100C5A6C7 /* background_music.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = E7C3CAFC221DECA100C5A6C7 /* background_music.mp3 */; };
 		E7C3CB01221DEDB700C5A6C7 /* Arcade-Puzzler.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = E7C3CB00221DEDB700C5A6C7 /* Arcade-Puzzler.mp3 */; };
 		E7F3DDCE221608EE00346DD8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7F3DDCD221608EE00346DD8 /* AppDelegate.swift */; };
-		E7F3DDD0221608EE00346DD8 /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = E7F3DDCF221608EE00346DD8 /* GameScene.sks */; };
+		E7F3DDD0221608EE00346DD8 /* Game.sks in Resources */ = {isa = PBXBuildFile; fileRef = E7F3DDCF221608EE00346DD8 /* Game.sks */; };
 		E7F3DDD2221608EE00346DD8 /* Actions.sks in Resources */ = {isa = PBXBuildFile; fileRef = E7F3DDD1221608EE00346DD8 /* Actions.sks */; };
-		E7F3DDD4221608EE00346DD8 /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7F3DDD3221608EE00346DD8 /* GameScene.swift */; };
+		E7F3DDD4221608EE00346DD8 /* Game.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7F3DDD3221608EE00346DD8 /* Game.swift */; };
 		E7F3DDD6221608EE00346DD8 /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7F3DDD5221608EE00346DD8 /* GameViewController.swift */; };
 		E7F3DDD9221608EE00346DD8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E7F3DDD7221608EE00346DD8 /* Main.storyboard */; };
 		E7F3DDDB221608F000346DD8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E7F3DDDA221608F000346DD8 /* Assets.xcassets */; };
@@ -26,17 +27,18 @@
 
 /* Begin PBXFileReference section */
 		E751B3272221C26A008034D5 /* GameOver.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameOver.sks; sourceTree = "<group>"; };
-		E751B32922220022008034D5 /* Menu.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Menu.sks; sourceTree = "<group>"; };
-		E751B32B222203D9008034D5 /* Menu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Menu.swift; sourceTree = "<group>"; };
+		E751B32922220022008034D5 /* GameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameScene.sks; sourceTree = "<group>"; };
+		E751B32B222203D9008034D5 /* GameScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameScene.swift; sourceTree = "<group>"; };
 		E751B32D222216D4008034D5 /* GameOver.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameOver.swift; sourceTree = "<group>"; };
+		E751B32F222226BF008034D5 /* Instructions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Instructions.swift; sourceTree = "<group>"; };
 		E7C3CAF8221CBBF400C5A6C7 /* brick.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = brick.wav; path = "../../../../../Downloads/BreakoutClone-part2Finished/brick.wav"; sourceTree = "<group>"; };
 		E7C3CAFC221DECA100C5A6C7 /* background_music.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = background_music.mp3; path = ../../../../../Downloads/background_music.mp3; sourceTree = "<group>"; };
 		E7C3CB00221DEDB700C5A6C7 /* Arcade-Puzzler.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = "Arcade-Puzzler.mp3"; path = "../../../../../Downloads/Arcade-Puzzler.mp3"; sourceTree = "<group>"; };
 		E7F3DDCA221608EE00346DD8 /* BrickBreaker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BrickBreaker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E7F3DDCD221608EE00346DD8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		E7F3DDCF221608EE00346DD8 /* GameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameScene.sks; sourceTree = "<group>"; };
+		E7F3DDCF221608EE00346DD8 /* Game.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Game.sks; sourceTree = "<group>"; };
 		E7F3DDD1221608EE00346DD8 /* Actions.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Actions.sks; sourceTree = "<group>"; };
-		E7F3DDD3221608EE00346DD8 /* GameScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameScene.swift; sourceTree = "<group>"; };
+		E7F3DDD3221608EE00346DD8 /* Game.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Game.swift; sourceTree = "<group>"; };
 		E7F3DDD5221608EE00346DD8 /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
 		E7F3DDD8221608EE00346DD8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		E7F3DDDA221608F000346DD8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -75,13 +77,14 @@
 			isa = PBXGroup;
 			children = (
 				E7F3DDCD221608EE00346DD8 /* AppDelegate.swift */,
-				E7F3DDCF221608EE00346DD8 /* GameScene.sks */,
+				E7F3DDCF221608EE00346DD8 /* Game.sks */,
 				E7F3DDD1221608EE00346DD8 /* Actions.sks */,
-				E7F3DDD3221608EE00346DD8 /* GameScene.swift */,
+				E7F3DDD3221608EE00346DD8 /* Game.swift */,
 				E751B3272221C26A008034D5 /* GameOver.sks */,
 				E751B32D222216D4008034D5 /* GameOver.swift */,
-				E751B32922220022008034D5 /* Menu.sks */,
-				E751B32B222203D9008034D5 /* Menu.swift */,
+				E751B32922220022008034D5 /* GameScene.sks */,
+				E751B32B222203D9008034D5 /* GameScene.swift */,
+				E751B32F222226BF008034D5 /* Instructions.swift */,
 				E7F3DDD5221608EE00346DD8 /* GameViewController.swift */,
 				E7F3DDD7221608EE00346DD8 /* Main.storyboard */,
 				E7C3CAF8221CBBF400C5A6C7 /* brick.wav */,
@@ -155,12 +158,12 @@
 				E7C3CAFD221DECA100C5A6C7 /* background_music.mp3 in Resources */,
 				E7C3CB01221DEDB700C5A6C7 /* Arcade-Puzzler.mp3 in Resources */,
 				E7F3DDD9221608EE00346DD8 /* Main.storyboard in Resources */,
-				E7F3DDD0221608EE00346DD8 /* GameScene.sks in Resources */,
+				E7F3DDD0221608EE00346DD8 /* Game.sks in Resources */,
 				E751B3282221C26A008034D5 /* GameOver.sks in Resources */,
 				E7C3CAF9221CBBF400C5A6C7 /* brick.wav in Resources */,
 				E7F3DDDB221608F000346DD8 /* Assets.xcassets in Resources */,
 				E7F3DDDE221608F000346DD8 /* LaunchScreen.storyboard in Resources */,
-				E751B32A22220022008034D5 /* Menu.sks in Resources */,
+				E751B32A22220022008034D5 /* GameScene.sks in Resources */,
 				E7F3DDD2221608EE00346DD8 /* Actions.sks in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -172,10 +175,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E7F3DDD4221608EE00346DD8 /* GameScene.swift in Sources */,
+				E7F3DDD4221608EE00346DD8 /* Game.swift in Sources */,
 				E7F3DDD6221608EE00346DD8 /* GameViewController.swift in Sources */,
-				E751B32C222203D9008034D5 /* Menu.swift in Sources */,
+				E751B32C222203D9008034D5 /* GameScene.swift in Sources */,
 				E751B32E222216D4008034D5 /* GameOver.swift in Sources */,
+				E751B330222226BF008034D5 /* Instructions.swift in Sources */,
 				E7F3DDCE221608EE00346DD8 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

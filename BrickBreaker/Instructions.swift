@@ -1,45 +1,45 @@
 //
-//  Menu.swift
+//  Instructions.swift
 //  BrickBreaker
 //
 //  Created by Sherlyn Lobo on 2019-02-23.
 //  Copyright © 2019 Sherlyn Lobo. All rights reserved.
 //
 
+import Foundation
 
 import SpriteKit
 import GameplayKit
 import AVFoundation
-class Menu: SKScene {
+class Instructions: SKScene {
     
     
     
-   // var newGameButtonNode :SKSpriteNode!
+    // var newGameButtonNode :SKSpriteNode!
     
-    public static var NG:SKLabelNode = SKLabelNode(text: "New Game")
-
+    public static var IT:SKLabelNode = SKLabelNode(text: "Instructions")
+    
     //var instructionsNode:SKSpriteNode!
     
     override func didMove(to view: SKView) {
         //newGameButtonNode = self.childNode(withName: "newGameButton") as? SKSpriteNode
-//        newGameButtonNode.name = "ng"
+        //        newGameButtonNode.name = "ng"
         
-        Menu.NG.position.x = 0
-        Menu.NG.position.y = 0
+        Instructions.IT.position.x = 200
+        Instructions.IT.position.y = 0
         
-        Menu.NG.fontColor = UIColor.yellow
-        Menu.NG.fontSize = 40.0
-        Menu.NG.zPosition = 3
-        Menu.NG.fontName = "Arial Bold"
-        Menu.NG.name = "NG"
+        Instructions.IT.fontColor = UIColor.yellow
+        Instructions.IT.fontSize = 40.0
+        Instructions.IT.zPosition = 3
+        Instructions.IT.fontName = "Arial Bold"
         
-        addChild(Menu.NG)
-    
+        addChild(Instructions.IT)
+        
         
     }
     
- 
-
+    
+    
     
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         
@@ -47,7 +47,7 @@ class Menu: SKScene {
             let pointOfTouch = touch.location(in: self)
             let tappedNode = atPoint(pointOfTouch)
             
-            if tappedNode.name == "NG" {
+            if tappedNode.name == "Back" {
                 /*
                  let newScene = GameScene(size: self.size)
                  newScene.scaleMode = self.scaleMode
@@ -58,7 +58,7 @@ class Menu: SKScene {
                     go.scaleMode = .aspectFill
                     view!.presentScene(go)
                 }
-
+                
                 
             }
             
@@ -67,4 +67,5 @@ class Menu: SKScene {
     }
     
 }
+
 
